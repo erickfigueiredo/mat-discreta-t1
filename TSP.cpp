@@ -21,17 +21,20 @@ int main() {
     
     //le a matriz n*n de distancias
     cin >> n;
+
     vector<vector<int>> mtrDist(n);
+
     for(int i =0;i<n;i++){
         for(int j = 0;j<n;j++){
             int aux;
             cin >> aux;
+
             mtrDist[i].push_back(aux);
-        }     
+        }  
     }
 
-    vector <int> pointsIDs; //vetor com uma rota inicial que sera permutado
-    vector <int> bestRoute; //vetor que conterá a melhor a cada permutação
+    vector <int> pointsIDs; //vetor com uma rota inicial que sera permutada
+    vector <int> bestRoute; //vetor que conterá a melhor rota a cada permutação
     int disMin = 123456789;
 
     for(int i = 0; i < n-1; i++) pointsIDs.push_back(i+1);
@@ -44,6 +47,8 @@ int main() {
             bestRoute = pointsIDs;
         }
     } while(next_permutation(pointsIDs.begin(), pointsIDs.end()));
+    
+    cout << disMin << '\n';
     
     //imprime a melhor rota
     cout << "0 -> ";        
