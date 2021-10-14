@@ -5,7 +5,7 @@
 using namespace std;
 
 
-int dist(vector<int> route, vector<vector<int>> mtrDist){
+int dist(const vector<int> & route, const vector<vector<int>> &mtrDist){
     int total = mtrDist[0][route[0]] + mtrDist[route[route.size()-1]][0]; //temos que somar a distancia da cidade do caixeiro
                                                                           // ate a primeira cidade da rota, e devemos somar a distancia da
                                                                           // ultima cidade da rota até a cidadd do caixeiros
