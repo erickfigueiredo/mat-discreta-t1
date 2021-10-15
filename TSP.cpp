@@ -42,11 +42,10 @@ int main() {
 
     do {
         int auxDist = calcDist(pointsIDs, mtrDist);
-
+        //assume como melhor rota a primeira(so executa na primeira iteração :)
         if (!isFirstMin) {
             minDist = auxDist;
             bestRoute = pointsIDs;
-            
             isFirstMin = true;
         } else if (auxDist < minDist) {
             minDist = auxDist;
