@@ -1,0 +1,13 @@
+BH -> viçosa 224KM      bh -> sao paulo 582KM     bh -> rj 441KM     bh -> es 514KM    bh -> curitiba 990KM   bh -> florianopolis 1270KM   bh -> portoalegre 1706KM   
+Rj -> viçosa 371KM      rj -> vitoria 527KM   rj-> curitiba 853KM   rj -> floripa 1133KM       rj -> portoalegre 1569KM 
+Sp -> viçosa 636km      sp -> rj 357KM    sp -> vitoria 869KM     sp -> curitiba 416KM    sp -> florianopolis 695KM    sp -> portoalegre 1131KM  
+Es -> viçosa 410KM      vitoria -> curitiba 1357KM       vitoria-> florianopolis 1636KM        vitoria -> porto alegre 2072KM
+
+porto alegre -> viçosa 1773KM  
+florianopolis -> viçosa 1337KM   florianopolis -> portoalegre 462KM
+curitiva  -> viçosa 1058KM   curitiba -> florianopolis 306KM        curitiba -> portoalegre 742KM 
+goiania -> viçosa  
+campoGrande -> viçosa
+cuiaba -> viçosa
+
+
