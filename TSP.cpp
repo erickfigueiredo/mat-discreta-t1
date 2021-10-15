@@ -45,6 +45,8 @@ int main() {
 
         if (!isFirstMin) {
             minDist = auxDist;
+            bestRoute = pointsIDs;
+            
             isFirstMin = true;
         } else if (auxDist < minDist) {
             minDist = auxDist;
