@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+#define MAX  123456789
 using namespace std;
 
 void toBinary(vector<bool>& c, int num, int cursor = 1) {
@@ -79,7 +79,7 @@ int main() {
     
     //valores finais que serao atualizados a cada permutação melhor 
     int scoreTotal = 0;
-    int disTotal = 123456789;
+    int disTotal = MAX;
     vector<int> bestRoute;
     
     //gera todas as combinações e permuta cada combinção
@@ -110,6 +110,9 @@ int main() {
     }
 
     //imprime a distancia/tempo gasto o score e melhor rota
+    if(disTotal == MAX){
+        disTotal = mtrDist[0][n-2];
+    }
     cout << disTotal << " ";
     cout << scoreTotal << "\n0 -> ";
     for(int i = 0;i< bestRoute.size();i++){

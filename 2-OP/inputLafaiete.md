@@ -1,0 +1,11 @@
+//Os pontos são definidos em Casa	Cinema	Teatro	Cristo Redentor	Prq. Exposições	Matriz	Basílica S. C. de Jesus	Rodoviária
+8           //número total de pontos, partindo de casa para a rodoviária
+5 3 2 4 2 3     //score de cada ponto respectivamente
+30
+27 31 40 72 25 9 32 
+0 21 22 45 2 21 10 
+21 0 46	33 23 41 31
+22 46 0 64 22 32 12 
+45 33 64 0 51 70 55 
+2 23 22 51 0 24 12
+21 41 32 70 24 0 28
