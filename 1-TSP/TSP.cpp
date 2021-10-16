@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <time.h>
 
 using namespace std;
 
@@ -19,20 +20,23 @@ int calcDist(const vector<int> &route, const vector<vector<int>> &mtrDist) {
     return total;
 }
 
-int main() {
+int main(int argc, char **argv) {
     int n, aux, minDist;
     bool isFirstMin = false;
-
+    srand(time(NULL));
+    
     //le a matriz n*n de distancias
-    cin >> n;
+    if(argc > 1) n = atoi(argv[1]); //se tivermos parametros entra no modo de teste de tempo e aloca a matriz automaticamente
+    else cin >> n;
 
     vector<vector<int>> mtrDist(n);
     vector<int> pointsIDs, bestRoute;
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            cin >> aux;
-
+            //seta as posiçoes da matriz aleatoriamente
+            if(argc > 1) aux = rand() % 1000;
+            else cin >> aux;
             mtrDist[i].push_back(aux);
         }
     }
