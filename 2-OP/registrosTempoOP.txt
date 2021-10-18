@@ -1,0 +1,25 @@
+Foi usado a ferramenta Time disponível em distribuições linux, para estimar o tempo gasto em função da entrada n, note que para esse problema se temos n cidades na rota a complexidade é em função de n-2, pois desconsideramos o ponto de partida e o de chegada que sempre estão na rota
+
+Para n = 11, que na verdade calcula a melhor rota entre 9 pontos
+
+─$ time ./OP 11 100
+79 205
+0 -> 6 -> 4 -> 9 -> 1 -> 10
+./OP 11 100  0,24s user 0,00s system 99% cpu 0,238 total
+
+
+Para n = 12, que na verdade calcula a melhor rota entre 10 pontos
+
+─$ time ./OP 12 100
+94 121
+0 -> 8 -> 10 -> 11
+./OP 12 100  2,43s user 0,00s system 99% cpu 2,435 total
+
+Para n = 13, que na verdade calcula a melhor rota entre 11 pontos
+─$ time ./OP 13 100
+84 249
+0 -> 3 -> 5 -> 1 -> 9 -> 2 -> 12
+./OP 13 100  29,04s user 0,00s system 99% cpu 29,051 total
+
+
+Note que a cada passo temos um aumento significativo no tempo gasto, note ainda que esse aumento é do tipo fatorial, o tempo gasto para n = 12 (10) é cerca de 10 vezes mais lento que para n = 11(9), o mesmo acontece com n = 13(11) que é cerca de 11 vezes mais lento que para n = 12(10). Estimando essa evolução para n maiores, gastariamos uma média de 7 minutos para n = 14(12) e 90 minutos para n = 15(13). Para n maiores o tempo gasto seria de muitas horas ou até dias, o que mostra que a solução é extremamente ineficiente para valores de n acima de 15(13). Se compararmos o tempo entre os mesmos valores de n na entrada para o problema TSP e OP, vemos que no segundo a solução é ainda menos eficiente, pois precisa gerar a permutação de todas as 2^(n-2) combinações.

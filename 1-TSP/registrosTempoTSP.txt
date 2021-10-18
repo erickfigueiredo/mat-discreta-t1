@@ -20,4 +20,4 @@ Para n = 13
 0 -> 8 -> 4 -> 11 -> 3 -> 7 -> 1 -> 10 -> 6 -> 12 -> 9 -> 2 -> 5 -> 0
 ./TSP 13  117,69s user 0,04s system 99% cpu 1:57,74 total
 
-Note que o tempo para n = 12 é aproximadamente 12 vezes o tempo para n = 11, isso também acontece para n 13, e pela natureza do problema isso deve se repetir para n maiores. Assim, estima-se que para n = 14, gaste quase 30 minutos e para n = 15 , mais de 7 horas. Com isso percebemos a inviabilidade de tal estratégia na solução do TSP
+Note que o tempo para n = 12 é aproximadamente 12 vezes o tempo para n = 11, isso também acontece para n 13, e pela natureza da solução isso deve se repetir para n maiores. Assim, estima-se que para n = 14, gaste quase 30 minutos e para n = 15  mais de 7 horas. Com isso percebemos a inviabilidade de tal estratégia na solução do TSP para valores maiores que 14.
